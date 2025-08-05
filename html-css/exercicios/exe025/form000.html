@@ -74,6 +74,28 @@
             <label for="ifoto">Foto</label>
             <input type="file" name="foto" id="ifoto">
         </p>
+        ---------------
+        <p>
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iestado">
+                <option value="" selected>-- Escolha --</option>
+                <optgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janeiro</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="DG">Designer</option>
+                <option>Desenvolvedor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Escreva aqui"></textarea>
+        </p>
     </form>
 </body>
 </html>
